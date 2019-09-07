@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.antogian.Repositories.Order" table="orders">
+        <id name="OrderID" type = "int" column = "OrderID">
+            <generator class="increment"/>
+        </id>
+        <property name="CheckID" column="CheckID" type="int" />
+        <property name="CreateDate" column="CreateDate" type="java.sql.Timestamp" />
+        <property name="ServiceDate" column="ServiceDate" type="java.sql.Timestamp" />
+        <property name="ServiceType" column="ServiceType" type="java.lang.String" />
+        <property name="Resv0" column="Resv0" type="java.lang.String" />
+        <property name="OrderStatus" column="OrderStatus" type="java.lang.String" />
+        <property name="DelayStatus" column="DelayStatus" type="java.lang.String" />
+        <property name="PayStatus" column="PayStatus" type="java.lang.String" />
+        <property name="TenderType" column="TenderType" type="java.lang.String" />
+        <property name="PayDate" column="PayDate" type="java.sql.Timestamp" />
+        <property name="ServerID" column="ServerID" type="int" />
+        <property name="StationID" column="StationID" type="int" />
+        <property name="RoomID" column="RoomID" type="int" />
+        <property name="TableID" column="TableID" type="java.lang.String" />
+        <property name="NGuests" column="NGuests" type="int" />
+        <property name="CustomerID" column="CustomerID" type="int" />
+        <property name="CustLName" column="CustLName" type="java.lang.String" />
+        <property name="CustFName" column="CustFname" type="java.lang.String" />
+        <property name="CustAddress" column="CustAddress" type="java.lang.String" />
+        <property name="PPAIndex" column="PPAIndex" type="int" />
+        <property name="CustPhone" column="CustPhone" type="java.lang.String" />
+        <property name="TillID" column="TillID" type="int" />
+        <property name="PServerID" column="PServerID" type="int" />
+        <property name="PStationID" column="PStationID" type="int" />
+        <property name="PCashRegID" column="PCashRegID" type="int" />
+        <property name="SubtotalT" column="SubtotalT" type="java.math.BigDecimal" length="15" precision="2" />
+        <property name="SubtotalNT" column="SubtotalNT" type="java.math.BigDecimal" length="15" precision="2" />
+        <property name="Tax" column="Tax" type="java.math.BigDecimal" length="15" precision="2"/>
+        <property name="Delivery" column="Delivery" type="java.math.BigDecimal" length="15" precision="2"/>
+        <property name="Discount" column="Discount" type="java.math.BigDecimal" length="15" precision="2" />
+        <property name="Gratuity" column="Gratuity" type="java.math.BigDecimal" length="15" precision="2" />
+        <property name="Total" column="Total" type="java.math.BigDecimal" length="15" precision="2" />
+        <property name="Tender" column="Tender" type="java.math.BigDecimal" length="15" precision="2" />
+        <property name="ChangeAmt" column="ChangeAmt" type="java.math.BigDecimal" length="15" precision="2" />
+        <property name="EmpDelivery" column="EmpDelivery" type="java.math.BigDecimal" length="15" precision="2" />
+        <property name="CshTender" column="CshTender" type="java.math.BigDecimal" length="15" precision="2" />
+        <property name="ChkTender" column="ChkTender" type="java.math.BigDecimal" length="15" precision="2" />
+        <property name="CCTender" column="CCTender" type="java.math.BigDecimal" length="15" precision="2" />
+        <property name="GCTender" column="GCTender" type="java.math.BigDecimal" length="15" precision="2" />
+        <property name="SATender" column="SATender" type="java.math.BigDecimal" length="15" precision="2" />
+        <property name="PastTender" column="PastTender" type="java.math.BigDecimal" length="15" precision="2" />
+        <property name="DelryEmpID" column="DelryEmpID" type="int" />
+        <property name="DelryDateStart" column="DelryDateStart" type="java.sql.Timestamp" />
+        <property name="DelryDateEnd" column="DelryDateEnd" type="java.sql.Timestamp" />
+        <property name="MakeEmpID" column="MakeEmpID" type="int" />
+        <property name="MakeDateStart" column="MakeDateStart" type="java.sql.Timestamp" />
+        <property name="MakeDateEnd" column="MakeDateEnd" type="java.sql.Timestamp" />
+        <property name="CallID" column="CallID" type="int" />
+        <property name="CancelDate" column="CancelDate" type="java.sql.Timestamp" />
+        <property name="ApprovalID" column="ApprovalID" type="int" />
+        <property name="ChgFrOID" column="ChgFrOID" type="int" />
+        <property name="ChgToOID" column="ChgToOID" type="int" />
+        <property name="ChgDescription" column="ChgDescription" type="java.lang.String" />
+        <property name="PrcFrOID" column="PrcFrOID" type="int" />
+        <property name="PrcToOID" column="PrcToOID" type="int" />
+        <property name="GiftCertID" column="GiftCertID" type="int" />
+        <property name="StoreAcctID" column="StoreAcctID" type="int" />
+        <property name="SubtotalT1" column="SubtotalT1" type="java.math.BigDecimal" length="15" precision="2" />
+        <property name="SubtotalT2" column="SubtotalT2" type="java.math.BigDecimal" length="15" precision="2" />
+        <property name="Tax1" column="Tax1" type="java.math.BigDecimal" length="15" precision="2" />
+        <property name="Tax2" column="Tax2" type="java.math.BigDecimal" length="15" precision="2" />
+        <property name="NoTaxOn" column="NoTaxOn" type="int" />
+        <property name="ForceCloseOn" column="ForceCloseOn" type="int" />
+        <property name="CCTransDate" column="CCTransDate" type="java.sql.Timestamp" />
+        <property name="CCTransType" column="CCTransType" type="java.lang.String" />
+        <property name="CCNumberLast" column="CCNumberLast" type="java.lang.String"  />
+        <property name="CCName" column="CCName" type="java.lang.String"  />
+        <property name="CCTState" column="CCTState" type="int" />
+        <property name="CCFee" column="CCFee" type="java.math.BigDecimal" length="15" precision="2" />
+        <property name="DPrintDate" column="DPrintDate" type="java.sql.Timestamp" />
+        <property name="Accounted" column="Accounted" type="int" />
+        <property name="TillStatus" column="TillStatus" type="int" />
+        <property name="ChgIndex" column="ChgIndex" type="int" />
+        <property name="TaxRateIdx" column="TaxRateIdx" type="int" />
+        <property name="OverRdDiscount" column="OverRdDiscount" type="java.math.BigDecimal" length="15" precision="2" />
+        <property name="DynSpclDiscount" column="DynSpclDiscount" type="java.math.BigDecimal" length="15" precision="2" />
+        <property name="Balance" column="Balance" type="java.math.BigDecimal" length="15" precision="2" />
+        <property name="NSubChecks" column="NSubChecks" type="int" />
+        <property name="SubCheckTotal" column="SubCheckTotal" type="java.math.BigDecimal" length="15" precision="2" />
+        <property name="AddToOID" column="AddToOID" type="int" />
+        <property name="CashOutOn" column="CashOutOn" type="int" />
+        <property name="SplitFrOID" column="SplitFrOID" type="int" />
+        <property name="OrderedFrom" column="OrderedFrom" type="java.lang.String" />
+        <property name="OrderRows" column="OrderRows" type="int" />
+        <property name="Comment" column="Comment" type="java.lang.String" />
+        <property name="OpenStatus" column="OpenStatus" type="int" />
+
+    </class>
+
+</hibernate-mapping>

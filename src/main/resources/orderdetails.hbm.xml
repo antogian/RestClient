@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.antogian.Repositories.OrderDetails" table="orderdetails">
+        <id name="ODID" type = "int" column = "ODID">
+            <generator class="increment"/>
+        </id>
+        <property name="OrderID" column="OrderID" type="int" />
+        <property name="LineNumber" column="LineNumber" type="int" />
+        <property name="Number" column="Number" type="java.lang.String" />
+        <property name="Size" column="Size" type="java.lang.String" />
+        <property name="Item" column="Item" type="java.lang.String" />
+        <property name="Price" column="Price" type="java.lang.String" />
+        <property name="Props" column="Props" type="int" />
+        <property name="TaxOn" column="TaxOn" type="int" />
+        <property name="CatIdx" column="CatIdx" type="int" />
+        <property name="ItmIdx" column="ItmIdx" type="int" />
+        <property name="LnFont" column="LnFont" type="java.lang.String" />
+        <property name="LnSize" column="LnSize" type="int" />
+        <property name="LnColor" column="LnColor" type="java.lang.String" />
+        <property name="LnPriority" column="LnPriority" type="int" />
+        <property name="iNumber" column="iNumber" type="java.lang.String" />
+        <property name="iSize" column="iSize" type="int" />
+        <property name="sPrice" column="sPrice" type="java.lang.String" />
+        <property name="InclString1" column="InclString1" type="java.lang.String" />
+        <property name="InclString2" column="InclString2" type="java.lang.String" />
+        <property name="InclChoice1" column="InclChoice1" type="int" />
+        <property name="InclChoice2" column="InclChoice2" type="int" />
+        <property name="InclChoice3" column="InclChoice3" type="int" />
+        <property name="InclChoice4" column="InclChoice4" type="int" />
+        <property name="InclChoice5" column="InclChoice5" type="int" />
+        <property name="InclChoice6" column="InclChoice6" type="int" />
+        <property name="ModGroup" column="ModGroup" type="int" />
+        <property name="ModMember" column="ModMember" type="int" />
+        <property name="ModInstr" column="ModInstr" type="int" />
+        <property name="ModHalf" column="ModHalf" type="int" />
+        <property name="Mod1ofN" column="Mod1ofN" type="int" />
+        <property name="SentOn" column="SentOn" type="int" />
+        <property name="PrnGroup" column="PrnGroup" type="int" />
+        <property name="CostGroup" column="CostGroup" type="int" />
+        <property name="ModNumber" column="ModNumber" type="int" />
+        <property name="ModWeight" column="ModWeight" type="float" />
+        <property name="ProdCode1" column="ProdCode1" type="java.lang.String" />
+        <property name="ProdCode2" column="ProdCode2" type="java.lang.String" />
+        <property name="MenuIdx" column="MenuIdx" type="int" />
+        <property name="CatName" column="CatName" type="java.lang.String" />
+        <property name="ItemName" column="ItemName" type="java.lang.String" />
+        <property name="ModAdd" column="ModAdd" type="int" />
+        <property name="BarCodeID" column="BarCodeID" type="java.lang.String" />
+        <property name="oNumber" column="oNumber" type="java.lang.String" />
+        <property name="oPrice" column="oPrice" type="java.lang.String" />
+        <property name="iPrice" column="iPrice" type="java.lang.String" />
+        <property name="TaxGroup" column="TaxGroup" type="int" />
+        <property name="OverRideID" column="OverRideID" type="int" />
+        <property name="PersonID" column="PersonID" type="int" />
+
+    </class>
+
+</hibernate-mapping>

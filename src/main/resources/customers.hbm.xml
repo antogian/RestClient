@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.antogian.Repositories.Customer" table="customers">
+        <id name="CID" type = "int" column = "CID">
+            <generator class="increment"/>
+        </id>
+        <property name="LName" column="Lname" type="java.lang.String" />
+        <property name="FName" column="FName" type="java.lang.String" />
+        <property name="AddrType" column="AddrType" type="java.lang.String" />
+        <property name="Address1" column="Address1" type="java.lang.String" />
+        <property name="Address2" column="Address2" type="java.lang.String" />
+        <property name="City" column="City" type="java.lang.String" />
+        <property name="State" column="State" type="java.lang.String" />
+        <property name="Zip" column="Zip" type="java.lang.String" />
+        <property name="Country" column="Country" type="java.lang.String" />
+        <property name="bLName" column="bLName" type="java.lang.String" />
+        <property name="bFName" column="bFName" type="java.lang.String" />
+        <property name="bAddress1" column="bAddress1" type="java.lang.String" />
+        <property name="bAddress2" column="bAddress2" type="java.lang.String" />
+        <property name="bCity" column="bCity" type="java.lang.String" />
+        <property name="bState" column="bState" type="java.lang.String" />
+        <property name="bZip" column="bZip" type="java.lang.String" />
+        <property name="bCountry" column="bCountry" type="java.lang.String" />
+        <property name="PhoneN1" column="PhoneN1" type="java.lang.String" />
+        <property name="PhoneN2" column="PhoneN2" type="java.lang.String" />
+        <property name="eMail" column="eMail" type="java.lang.String" />
+        <property name="MaxCreditAmt" column="MaxCreditAmt" type="java.math.BigDecimal" />
+        <property name="CreditAmt" column="CreditAmt" type="java.math.BigDecimal" />
+        <property name="MinBuyAmt" column="MinBuyamt" type="java.math.BigDecimal" />
+        <property name="MaxBuyAmt" column="MaxBuyAmt" type="java.math.BigDecimal" />
+        <property name="SecLevel" column="SecLevel" type="java.lang.String" />
+        <property name="UserID" column="UserID" type="java.lang.String" />
+        <property name="Password" column="Password" type="byte[]" />
+        <property name="SecQuestion" column="SecQuestion" type="java.lang.String" />
+        <property name="SecAnswer" column="SecAnswer" type="java.lang.String" />
+        <property name="CreateDate" column="CreateDate" type="java.lang.String" />
+        <property name="UpdateDate" column="UpdateDate" type="java.lang.String" />
+        <property name="CCName" column="CCName" type="java.lang.String" />
+        <property name="CCNumber" column="CCNumber" type="byte[]" />
+        <property name="CCExp" column="CCExp" type="byte[]" />
+        <property name="CCSecCode" column="CCSecCode" type="byte[]" />
+        <property name="CreditHist" column="CreditHist" type="java.lang.String" />
+        <property name="BankAmt" column="BankAmt" type="java.math.BigDecimal" />
+        <property name="CustType" column="CustType" type="java.lang.String" />
+        <property name="ZoneID" column="ZoneID" type="int" />
+        <property name="SpcInstruct" column="SpcInstruct" type="java.lang.String" />
+        <property name="NOrders" column="NOrders" type="int" />
+        <property name="OrdersAmt" column="OrdersAmt" type="java.math.BigDecimal" />
+        <property name="StoreName" column="StoreName" type="java.lang.String" />
+        <property name="LogIn" column="LogIn" type="int" />
+        <property name="Active" column="DelryEmpID" type="int" />
+        <property name="PhoneExt" column="PhoneExt" type="java.lang.String" />
+        <property name="BarcodeID" column="BarCodeID" type="java.lang.String" />
+        <property name="DiscountAmt" column="DiscountAmt" type="java.math.BigDecimal" length="15" precision="2" />
+        <property name="BadCustomerOn" column="BadCustomerOn" type="int" />
+        <property name="SCreditOn" column="SCreditOn" type="int" />
+        <property name="SBankOn" column="SBankOn" type="int" />
+        <property name="CCFName" column="CCFName" type="java.lang.String" />
+        <property name="CCLName" column="CCLName" type="java.lang.String" />
+        <property name="IsCellPhone" column="IsCellPhone" type="int" />
+        <property name="CanSolicitPhone" column="CanSolicitPhone" type="int" />
+
+
+    </class>
+
+</hibernate-mapping>
